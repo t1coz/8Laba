@@ -17,6 +17,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-c-cpp@v1
       - name: Generate compilation database
         run: |
+          cd 2
           mkdir build
           cmake -S . -B build
       - name: Run sonar-scanner
