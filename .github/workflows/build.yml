@@ -19,7 +19,6 @@ jobs:
         uses: SonarSource/sonarcloud-github-c-cpp@v1
       - name: Run build-wrapper
         run: |
-          cd 8Laba
           cd 1
           mkdir build
           cmake -S . -B build
